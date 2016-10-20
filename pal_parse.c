@@ -8,6 +8,13 @@
   an error.  if not it parses requests for registers, literals, and
   labels, and then calls the dispatch function on them */
 
+#include <strings.h>
+
+#if defined (_WIN32) || defined (_WIN64)
+    #define strcasecmp _stricmp
+    #define strncasecmp _strnicmp
+#endif
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "pendvm.h"
