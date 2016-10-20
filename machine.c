@@ -54,7 +54,7 @@ void load_imem(char *input)
 {
   FILE *file;
   char buffer[256];
-  char tmp[5][16];
+  char tmp[5][32];
   WORD address=-1;
   int line=1; /* start w/ line 2 of the file */
   int fields;
