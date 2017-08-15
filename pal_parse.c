@@ -213,7 +213,7 @@ parse_immed(char *immed, int len)
   if( !strlen(immed) ) return NULL; /* also empty */
 
   /* check to see if label */
-  if( temp=parse_label(immed) ) {
+  if( (temp=parse_label(immed)) ) {
     value=*temp;
   } else {
     /* not label */

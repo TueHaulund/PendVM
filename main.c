@@ -104,7 +104,7 @@ char *parse_command_line(int argc, char *argv[])
     }
     else if (!strcmp(*current, OPTION_DEBUG))
       interactive = 1;
-    else if (!strncmp(*current, "--radix")) {
+    else if (!strcmp(*current, "--radix")) {
       int radix;
       current++;
       radix=atoi(*current);

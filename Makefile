@@ -8,7 +8,7 @@ LATEX=latex
 DVIPS=dvips
 
 DEBUG=-DDEBUG
-CFLAGS=-g
+CFLAGS=-g -std=c89 -Wno-pointer-sign
 LDFLAGS=
 LIBS=
 
